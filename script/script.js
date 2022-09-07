@@ -5,6 +5,12 @@ const yearEl = document.querySelector(".year");
 // for getting the current year
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+/////////////////////////////////////////////
+// preloader
+const loader = document.querySelector(".loader-overlay");
+window.addEventListener("load", () => {
+  loader.classList.add("hidden");
+});
 
 // ===============making mobile nav work============
 
